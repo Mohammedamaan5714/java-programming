@@ -1,7 +1,7 @@
 //primitive data types
 //typecasting 
 //printf
-public class A_java {
+public class A0_java {
     public static void main(String[] args) {
         prime type =new prime();
         castingtype modify =new castingtype();
