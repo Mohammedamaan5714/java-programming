@@ -3,6 +3,27 @@
 public class A5_java {
 
    public static void main(String[] args) {
+
+      // String str1 = "Hello"; // Checks the string pool; "Hello" is created in the pool.
+      // String str2 = "Hello"; // Reuses the existing "Hello" from the string pool.
+      // System.out.println(str1 == str2); // This will print true because they refer to the same object in the pool.
+
+      // String str1 = new String("hello");// create a new object in heap
+      // String str2 = new String("hello");// this also creates another aboject in heap, a new one
+      // System.out.println(str1==str2); //false because they refer to different objects
+
+      // String str1 = new String("Hello"); // Creates a new object on the heap.
+      // String str2 = "Hello"; // Checks the string pool; if "Hello" exists, it reuses from the pool.
+      // System.out.println(str1 == str2); // This will print false because they refer to different objects.
+
+
+      // it happens because with the literal method the string was created in pool (within a heap but a sepcific isolated space)
+      // and when we created with the help of new keyword it was created in heap like other objects 
+      // so after comparing they ain't the same things
+      // -> the literal with the same values point towards same object in pool so they are same
+      // -> in the pool the siring is immutable 
+      //-> the new object alsways create new object in heap so they point to diffent objects
+
       // String name = "Harry";
       // // Printing the value of the 'name' string
       // System.out.println(name);
@@ -71,9 +92,7 @@ public class A5_java {
       // // Printing a string with an escape sequence (\t) and a double quote (\")
       // System.out.println("I am escape sequence\tdouble quote");
 
-
-
-      //to call the string bulider function in other class name buff
+      // to call the string bulider function in other class name buff
       buff obj = new buff();
       obj.builder();
 
@@ -82,7 +101,7 @@ public class A5_java {
 
 class buff {
    void builder() {
-      StringBuilder sb = new StringBuilder("Apna College");
+      StringBuilder sb = new StringBuilder(" mahtama jyotiba ");
       System.out.println(sb);
       // Get Char
       System.out.println(sb.charAt(0));
