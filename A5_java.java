@@ -96,12 +96,16 @@ public class A5_java {
       buff obj = new buff();
       obj.builder();
 
+      // bulane ke liye class the backslash wale function ki class ko 
+      escapefunctions obj1 =new escapefunctions();
+      obj1.backfunc();
+
    }
 }
 
 class buff {
    void builder() {
-      StringBuilder sb = new StringBuilder(" mahtama jyotiba ");
+      StringBuilder sb = new StringBuilder("Apna College");
       System.out.println(sb);
       // Get Char
       System.out.println(sb.charAt(0));
@@ -129,5 +133,42 @@ class buff {
       // StringBuilder for better performance in a single-threaded scenario and
       // StringBuffer for thread safety in a multi-threaded environment.
       // except this everthing is similar
+   }
+}
+
+class escapefunctions{
+   public void backfunc(){
+      //  // Printing on a new line (\n)
+      //   System.out.println("Hello\nWorld"); // Output:
+      //   // Hello
+      //   // World
+
+      //   // Inserting a tab (\t)
+      //   System.out.println("Java\tProgramming"); // Output:
+      //   // Java    Programming
+
+      //   // Using a backspace (\b)
+      //   System.out.println("Back\bSpace"); // Output:
+      //   // BacSpace
+
+      //   // Carriage return (\r) - moves the cursor to the beginning of the line
+      //   System.out.println("This is a\rCarriage Return"); // Output:
+      //   // Carriage Returna
+
+      //   // Double quote (\")
+      //   System.out.println("Escaping \"quotes\""); // Output:
+      //   // Escaping "quotes"
+
+      //   // Single quote (\')
+      //   System.out.println("Escaping a 'single quote'"); // Output:
+      //   // Escaping a 'single quote'
+
+      //   // Backslash (\\)
+      //   System.out.println("Escaping a backslash \\"); // Output:
+      //   // Escaping a backslash \
+
+      //   // Unicode representation (\\u)
+      //   System.out.println("Unicode Character: " + "\u00A9"); // Output:
+      //   // Unicode Character: ©
    }
 }
