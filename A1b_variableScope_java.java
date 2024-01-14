@@ -42,7 +42,7 @@ class variables {
 
 }
 
-public class A1b_java {
+public class A1b_variableScope_java {
     public static void main(String[] args) {
         // Creating objects and demonstrating variable types
         variables obj1 = new variables("Object 1");
